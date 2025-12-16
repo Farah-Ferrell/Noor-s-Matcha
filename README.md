@@ -142,6 +142,16 @@ button:hover {
         <button type="submit">Bestelling doorgeven ✨</button>
     </form>
 </div>
+<section class="hero">
+  <img src="hero-matcha.webp" alt="Matcha latte in kopje" loading="lazy">
+  <h1>Noor’s Matcha Bar</h1>
+  <p>Ontdek onze speciale matcha creaties</p>
+</section>
+<div class="product-card">
+  <img src="berry-matcha.webp" alt="Berry Bliss Matcha">
+  <h2>Berry Bliss Matcha</h2>
+  <p>Fris & fruitig – roze vibes</p>
+</div>
 
 </body>
 </html>
