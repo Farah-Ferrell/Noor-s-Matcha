@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet 16 Noor</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(#ffeef4,#f6fff4);
+text-align:center;
+}
+
+h1{color:#6a8f5f;margin-top:30px}
+p{color:#555}
+
+.card{
+background:white;
+margin:20px;
+border-radius:20px;
+padding:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+animation:fadeIn 1s ease;
+}
+
+img{
+width:100%;
+border-radius:15px;
+}
+
+button{
+background:#6a8f5f;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:999px;
+font-size:16px;
+margin-top:10px;
+cursor:pointer;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.confetti{
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+pointer-events:none;
+background:url("https://i.imgur.com/8QfQ7Zy.gif") center/cover;
+display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="confetti" id="confetti"></div>
+
+<h1>🎉 Sweet 16 Noor 🍵</h1>
+<p>Bestel jouw matcha</p>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5">
+<h3>Classic Matcha</h3>
+<button onclick="bestel('Classic Matcha')">Bestel</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1622480916113-9000ac49a0d2">
+<h3>Berry Matcha</h3>
+<button onclick="bestel('Berry Matcha')">Bestel</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25">
+<h3>Mango Matcha</h3>
+<button onclick="bestel('Mango Matcha')">Bestel</button>
+</div>
+
+<script>
+function bestel(drink){
+document.getElementById("confetti").style.display="block";
+setTimeout(()=>alert("Besteld: "+drink+" 🎉"),500);
+setTimeout(()=>document.getElementById("confetti").style.display="none",3000);
+}
+</script>
+
+</body>
+</html>
